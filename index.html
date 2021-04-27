@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+
+    <!--? ====== CSS ====== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--? ====== BOXICON ====== -->
+  </head>
+  <body>
+    <!--! ====== SURVEY ====== -->
+
+    <div class="container">
+      <!--* ====== HEADER ====== -->
+      <header class="header-content bd-grid">
+        <h1 class="header__title" id="title">Survey Form</h1>
+        <p class="header__description" id="description">
+          Bantu saya mengembangkan skill programing saya dengan mengisi survey
+          form di bawah ini.
+        </p>
+      </header>
+      <!-- * ====== /HEADER ====== -->
+
+      <!--* ====== FORM ====== -->
+      <form action="" class="survey-content bd-grid" id="survey-form">
+        <!--todo ====== NAME ====== -->
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="name"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Masukan nama Anda"
+            required
+          />
+        </div>
+
+        <!--todo ====== EMAIL ====== -->
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Masukan email Anda"
+            required
+          />
+        </div>
+
+        <!--todo ====== AGE ====== -->
+        <div class="form-group">
+          <label for="number" id="number-label">
+            Age <span class="clue">(Optional)</span>
+          </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="form-control"
+            min="10"
+            max="99"
+            placeholder="Berapa umur Anda?"
+          />
+        </div>
+
+        <!--todo ====== SELECT-ROLE ====== -->
+        <div class="form-group">
+          <p class="section-description">Siapakah Anda?</p>
+          <select
+            name="role"
+            id="dropdown"
+            class="form-control select-data"
+            required
+          >
+            <option disabled selected value>Silakan pilih</option>
+            <option value="it">Orang yang mengerti di bidang IT</option>
+            <option value="sains">Orang yang mengerti di bidang sains</option>
+            <option value="agama">Orang yang mengerti di bidang agama</option>
+            <option value="umum">Masyarakat umum</option>
+            <option value="beban">Beban Keluarga</option>
+          </select>
+        </div>
+
+        <!--todo ====== RADIOBUTTON ====== -->
+        <div class="form-group">
+          <p class="section-description">
+            Apakah Anda akan mendukung saya untuk menjadi programer?
+          </p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Ya pasti</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Mungkin</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Tidak</label
+          >
+        </div>
+
+        <!--todo ====== SELECT-MOSTLIKE ====== -->
+        <div class="form-group">
+          <p class="section-description">Apa yang Anda inginkan dari saya?</p>
+          <select
+            name="mostLike"
+            id="most-like"
+            class="form-control select-data"
+            required
+          >
+            <option disabled selected value>Silakan pilih</option>
+            <option value="pahala">Pahala</option>
+            <option value="harta">Harta</option>
+            <option value="tahta">Tahta</option>
+            <option value="wanita">Wanita</option>
+          </select>
+        </div>
+
+        <!--todo ====== CHECKBOX ====== -->
+        <div class="form-group">
+          <p class="section-description">
+            Menurut Anda profesi apa yang cocok untuk saya?
+          </p>
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Developer</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Full-stack Developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Android Developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />IT Enginering</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Scientist</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Enterpreneur</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />Ulama</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Beban Keluarga</label
+          >
+        </div>
+
+        <!--todo ====== COMMENT ====== -->
+        <div class="form-group">
+          <p class="comment-title">Kritik dan Saran</p>
+          <textarea
+            name="comment"
+            class="input-textarea"
+            id="comment"
+            placeholder="Masukan kritik dan saran Anda."
+          ></textarea>
+        </div>
+
+        <!--todo ====== SUBMIT-BUTTON ====== -->
+        <div class="form-group">
+          <button type="submit" class="submit-button" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+      <!--* ====== /FORM ====== -->
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
